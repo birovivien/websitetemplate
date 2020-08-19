@@ -19,19 +19,6 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase
 }
 
-h1 {
-  font-size: 6rem;
-  line-height: 5.5rem
-}
-
-h2 {
-  font-size: 3.5rem
-}
-
-h3 {
-  font-size: 2rem
-}
-
 #navigationBar {
   user-select: none
 }
@@ -72,25 +59,67 @@ h3 {
   display: none
 }
 
-.about-section h4 {
-  color: #7f8c8d
+.about-section h1 {
+  font-size: 2.5rem;
 }
 
 .about-section p {
   font-size: 2.6vh;
+  color: #6e7879;
+}
+
+.portfolio-section h1 {
+  font-size: 2.5rem;
+}
+
+.portfolio-section p {
+  font-size: 2.6vh;
   color: #6e7879
 }
 
-@media(max-width:720px) {
-  .name-heading {
-    font-size: 15vw;
-  }
+.contact-section h1 {
+  font-size: 2.5rem;
 }
+
+.contact-section p {
+  font-size: 2.6vh;
+  color: #6e7879
+}
+
 
 @media(max-width:992px) {
   .flex-d-align {
     display: flex;
   }
+
+
+  .about-section h1 {
+    font-size: 5vh;
+  }
+
+  .about-section p {
+    font-size: 3.5vh;
+    color: #6e7879
+  }
+
+  .portfolio-section h1 {
+    font-size: 5vh;
+  }
+
+  .portfolio-section p {
+    font-size: 3.5vh;
+    color: #6e7879
+  }
+
+  .contact-section h1 {
+    font-size: 5vh;
+  }
+
+  .contact-section p {
+    font-size: 3.5vh;
+    color: #6e7879
+  }
+
 
   p.centered-paragraph {
     padding-left: 1vw;
@@ -103,7 +132,7 @@ h3 {
 
   #navigationBar .navbar-nav {
     padding-top: 0;
-    height: 100vh;
+    height: 40vh;
   }
 
   #navigationBar .small-dont-show {
@@ -113,6 +142,17 @@ h3 {
   #navigationBar .navbar-toggler {
     color: #333;
   }
+  .navbar-brand {
+    font-size: 5vh;
+    margin: 1% 0 0 1%;
+    text-transform: uppercase;
+  }
+
+  .nav-link {
+    margin-top: 2%;
+    font-size: 3.5vh;
+  }
+
 }
 
 @media(min-width:992px) {
@@ -131,11 +171,6 @@ h3 {
     text-transform: uppercase;
   }
 
-  #navigationBar .navbar-brand .profile-rounded {
-    max-width: 10rem;
-    max-height: 9rem;
-    border: .5rem solid rgba(255, 255, 255, .2)
-  }
 
   #navigationBar .navbar-collapse {
     display: flex;
@@ -164,4 +199,7 @@ h3 {
   #navigationBar .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block
   }
+
+
+
 }
